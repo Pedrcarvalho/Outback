@@ -1,0 +1,28 @@
+.fundo{
+	position: relative;
+	height: 120vh;
+	width: 120vw;
+	background-color: #708090;
+	background-cover
+}
+.Titulo{
+	color: limegreen;
+}
+.ft{
+	height: 142px;
+	width: 222px;
+}
+.ft2{
+	height: 142px;
+	width: 222px;
+}
+.ft3{
+	height: 142px;
+	width: 222px;
+}
+input{
+	background-color: aliceblue;
+	color: rgb(255, 127, 138);
+	border: 5px darkorchid;
+	border-radius: 15px;
+}

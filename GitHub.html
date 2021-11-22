@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+		<head>
+	<title>Loja de Jogos</title>
+	<script src="https://unpkg.com/vue"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="style.css">
+
+		</head>
+	<body>
+		<div class="fundo"><<h1 class="Titulo">Loja de Jogos</h1>
+		<p/>
+		Jogos:
+		<p/>
+		<img src="https://m.media-amazon.com/images/I/61Bv3D0aUXL._AC_SX342_.jpg" class="ft">
+		<br><b>Spider Man PS4: R$100,00 </b>
+		<br> <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/395/966/products/fifa-21-ps41-61474ae0e9fd84d88516045970327991-1024-1024.png" class="ft2">
+		<br><b>Fifa 21: R$145,00</b>
+		<br><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/58ba0cc9-4440-4607-9231-4ddb42689d98/d99xxh5-36b9d2a7-0c1b-4082-9953-4d86ba276bab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU4YmEwY2M5LTQ0NDAtNDYwNy05MjMxLTRkZGI0MjY4OWQ5OFwvZDk5eHhoNS0zNmI5ZDJhNy0wYzFiLTQwODItOTk1My00ZDg2YmEyNzZiYWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GvOKIEjWxzGSmdJwHt6m14xCj5pO5UivH5KPEE1Kp5I" class="ft3">
+		<br><b>Dragon ball xenoverse: R$70,00</b>
+
+		<div id="app-calc">
+    <p>Valor do Jogo é: R${{n1}}</p>
+    <p>Valor do segundo jogo é: R${{n2}}</p>
+
+    <input v-model.number="n1" type="number">
+    <input v-model.number="n2" type="number">
+    
+    <p>A soma dos dois valores é: R${{ n1+n2 }}</p>
+    
+
+     </div>
+     <script>
+    var app7 = new Vue({
+        el: '#app-calc',
+        data: {
+            n1: 10,
+            n2: 2,
+            result:0
+        },
+        methods: {
+          sumFunction: function () {
+              this.result = this.n1 + this.n2;
+          }
+       }
+    })
+    	</script>
+    	<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+	<script>
+	var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Kawe Silva' },
+      { text: 'Pedro Piccinin' },
+      { text: 'Guilherme Mattos' }
+    ]
+  }
+})
+	</script>
+	</div>
+		
+	</body>
+</html>
